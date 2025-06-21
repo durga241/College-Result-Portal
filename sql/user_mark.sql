@@ -1,0 +1,48 @@
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+-- Database: `id8550800_sms`
+USE sms;
+
+-- Drop the table if it exists (to avoid conflicts)
+DROP TABLE IF EXISTS user_mark;
+
+-- Create the table
+CREATE TABLE IF NOT EXISTS user_mark (
+  id INT(11) NOT NULL AUTO_INCREMENT,
+  u_rollno VARCHAR(20) NOT NULL,
+
+  -- 1st Semester
+  grade1_MA1011 CHAR(3) NOT NULL, 
+  grade1_CP1012 CHAR(3) NOT NULL,
+  grade1_CC1013 CHAR(3) NOT NULL,
+  grade1_ML1014 CHAR(3) NOT NULL,
+  grade1_DS1015 CHAR(3) NOT NULL,
+
+  -- 2nd Semester
+  grade2_PH2011 CHAR(3) NOT NULL,
+  grade2_DS2012 CHAR(3) NOT NULL,
+  grade2_CP2013 CHAR(3) NOT NULL,
+  grade2_PHP2014 CHAR(3) NOT NULL,
+  grade2_SQL2015 CHAR(3) NOT NULL,
+  grade2_AI2016 CHAR(3) NOT NULL,
+
+  -- SPI & CPI Columns
+  spi1 DECIMAL(5,2) NOT NULL DEFAULT 0.00,
+  spi2 DECIMAL(5,2) NOT NULL DEFAULT 0.00,
+  cpi DECIMAL(5,2) NOT NULL DEFAULT 0.00,
+
+  -- Timestamp for Data Insertion
+
+
+  PRIMARY KEY (id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+COMMIT;
