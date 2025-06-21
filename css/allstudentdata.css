@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 30px;
+    overflow-x: hidden;
+    color: black;
+    font-family: 'Flamenco', cursive;
+}
+
+/* Header */
+header {
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../image/plane.jpg);
+    height: 800px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Fix clearfix issue */
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 9px;
+    clear: both;
+}
+
+.row {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+/* Navigation */
+.main-nav {
+    float: right;
+    margin-top: 30px;
+}
+
+.main-nav li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 40px;
+}
+
+.main-nav li a {
+    padding: 5px 2px;
+    color: #000;
+    text-shadow: #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: 100;
+}
+
+.main-nav li a:hover {
+    color: yellow;
+    font-weight: 1000;
+}
+
+h3 {
+    margin-left: 600px;
+    margin-top: 10px;
+}
+
+.main-content-header {
+    border-top: 3px solid black;
+}
+
+h2 {
+    font-size: 3rem;
+    color: #cc0099;
+    font-weight: 900;
+    padding-left: 5rem;
+    padding-top: 1rem;
+    text-shadow: 2px 2px black;
+}
+
+/* Table Styling */
+table {
+    margin-top: 15px;
+    margin-left: 50px;
+    background-color: white;
+    width: 70%;
+    border-collapse: collapse; /* Ensures no double borders */
+    border: 3px solid black; /* Black border around the table */
+}
+
+th, td {
+    border: 3px solid black; /* Ensures each cell has a black border */
+    padding: 10px;
+    text-align: center;
+}
+
+/* Table Header */
+th {
+    background-color: lightgray; /* Optional: Adds a background color for headers */
+}
+
+.massage_h1, .id_h1, .name_h1, .email_h1, .contact_h1 {
+    font-size: 30px;
+    color: black;
+    border-top: 3px solid black;
+    padding: 15px;
+}
+
+.id_h1 {
+    border-left: 3px solid black;
+}
+
+.contact_h1 {
+    padding-right: 20px;
+}
+
+/* Inner Table Styling */
+th {
+    padding: 15px;
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+}
+
+.massage_h, .id_h, .name_h, .dob_h, .roll_no_h, .branch_h, .email_h, .phone_no_h {
+    padding: 8px 15px;
+    border: 3px solid black;
+}
+
+/* Fix phone number class issue */
+.phone_no_h {
+    padding-right: 15px;
+    padding-left: 15px;
+}

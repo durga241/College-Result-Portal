@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 30px;
+    overflow-x: hidden;
+    color: white;
+    font-family: 'Flamenco', cursive;
+}
+
+header {
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../image/blackboard.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.main-nav {
+    float: right;
+    margin-top: 30px;
+}
+
+.main-nav li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 40px;
+}
+
+.main-nav li a {
+    padding: 5px 2px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: 100;
+}
+
+.main-nav li a:hover {
+    color: yellow;
+    font-weight: 1000;
+}
+nav {
+    border-bottom: 2px solid white; /* clean white line */
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+/* OTP Section */
+.otp-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 120px); /* below nav bar */
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../image/blackboard.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30px 0;
+}
+
+.otp-box {
+    background: white;
+    color: black;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+.otp-box h2 {
+    margin-bottom: 20px;
+}
+
+.otp-box input[type="text"],
+.otp-box input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.otp-box input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.otp-box input[type="submit"]:hover {
+    background-color: #45a049;
+}

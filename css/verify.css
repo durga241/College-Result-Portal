@@ -1,0 +1,72 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                url("../image/blackboard.jpg") no-repeat center center;
+    background-size: cover;
+  }
+  
+
+
+.container  {
+background: rgb(255, 255, 255);
+height: 300px;
+width: 600px;
+
+border-radius:  5px;
+padding: 25px;
+text-align: center;
+}
+.otp-form p {
+    display: 10px;
+    color: green;
+}
+.otp-group {
+    display: flex;
+    gap:10px;
+    justify-content: center;
+    margin: 10px;
+}
+otp-group input {
+    height: 50px;
+    width: 20px;
+    padding: 1px;
+    font-size: 5px;
+    text-align: center;
+    outline: none;
+    border-bottom: 2px solid grey;
+
+}
+.otp-input {
+    width: 40px;
+    height: 40px;
+    margin: 0 1px;
+    font-size: 24px;
+    text-align: center;
+    border: none;
+    border-bottom: 2px solid black; /* Dash-like underline */
+    background: transparent;
+    outline: none;
+  }
+  
+  .otp-input::-webkit-inner-spin-button,
+  .otp-input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+
+
+
+
+
